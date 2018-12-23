@@ -1,7 +1,3 @@
 Dumbtext for dubmbfile for dumb features branch.
 
-Just trying branching anyways.
-
-Branched again to dumbfiles-ultra
-
-Back 2 master and Smartgit
+Just trying out some branching.
