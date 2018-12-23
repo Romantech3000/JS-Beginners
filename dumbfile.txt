@@ -1,4 +1,7 @@
 Dumbtext for dubmbfile for dumb features branch.
 Just trying branching anyways.
+<<<<<<< HEAD
 
 Branched again to dumbfiles-ultra
+=======
+>>>>>>> master
