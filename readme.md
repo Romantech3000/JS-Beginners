@@ -6,3 +6,5 @@ Javascript Базовый уровень
 Making this edit in the branch.
 
 Changes made in **master**
+
+master changes again
