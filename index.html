@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+<div class="container">
+<h3>Задание 1</h3>
+<table class="code-table">
+    <tr>
+        <td>1</td>
+        <td>var a = 1, b = 1, c, d;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>c = ++a; alert(c);</td>
+        <td>// 2 // в префиксной форме инкремент отрабатывает перед присваиванием</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>d = b++; alert(d);  </td>
+        <td>// 1 // в постфиксной форме инкремент отрабатывает после присваивания</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>c = (2+ ++a); alert(c);</td>
+        <td>// 5 // к 2-м прибавляется а, увеличенное на 1</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>d = (2+ b++); alert(d);</td>
+        <td>// 4 // текущее значение b добавляется к b, потом b увеличивается на 1</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>alert(a); </td>
+        <td>// 3 // а было 1, затем в строке 2 увеличено на 1 и в строке 4 ещё на 1</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>alert(b);</td>
+        <td>// 3 // b было 1, в строке 3 увеличили на 1, в строке 5 ещё на 1</td>
+    </tr>
+</table>
+
+<h3>Задание 2</h3>
+<table class="code-table">
+    <tr>
+        <td>1</td>
+        <td>var a = 2;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>var x = 1 + (a *= 2);</td>
+        <td>// 5</td>
+    </tr>    
+</table>
+
+<h3>Задание 3</h3>
+
+<div class="btn" onclick="task3()">Разница/сумма/произведение случайных чисел</div>
+ 
+ <p id="results3"></p>
+
+<h3>Задание 4</h3>
+
+<div class="btn" onclick="task4()">Числа от а до 15</div>
+ 
+ <p id="results4"></p>
+
+<h3>Задание 5</h3>
+
+<input class="w5em" id="value_a" type="text">
+<input class="w5em" id="value_b" type="text">
+<select name="" id="oper" onchange="calcAB()">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+</select>
+<div class="btn" onclick="calcAB()">=</div>
+<input class="w5em" id="result" type="text">
+
+<br>
+
+<h3>Задание 6</h3>
+<button class="btn" onclick="task6()">mathOperation</button>
+
+<h3>Задание 7</h3>
+<button class="btn" onclick="task7()">null and 0</button>
+<p id="task7"></p>
+
+<h3>Задание 8</h3>
+<button class="btn" onclick="task8()">power</button>
+</div>
+
+</div>
+
+</body>
+</html>

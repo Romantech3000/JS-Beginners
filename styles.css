@@ -1,0 +1,40 @@
+.btn {
+    display: inline-block;
+    padding: 15px; 
+    background-color: blueviolet;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+
+.code-table td:first-child {
+    color: #888;
+    background-color: #fafafa;
+    font-family: monospace;
+    width: 24px;
+}
+
+.code-table td {
+    padding: 5px 10px;
+}
+
+h3 {
+    margin-top: 2em;
+}
+
+input[type="text"],
+select {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.w5em {
+    width: 5em;
+}
