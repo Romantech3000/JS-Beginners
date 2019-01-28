@@ -1,0 +1,130 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px; 
+    background-color:#fff;
+    color: #a07;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid #a47;
+    outline: none;
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 4px #ccc;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+
+.code-table td:first-child {
+    color: #888;
+    background-color: #fafafa;
+    font-family: monospace;
+    width: 24px;
+}
+
+.code-table td {
+    padding: 5px 10px;
+}
+
+h1, h2, h3, h4 {
+    background-color: #5a6;
+    color: #fff;
+    padding: 8px;
+}
+
+h2 {
+    background-color: #a67;
+    margin-top: 2.5em;
+    padding: 8px 15px;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin-top: 0.2em;
+}
+
+input[type="text"],
+select {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.w5em {
+    width: 5em;
+}
+
+.num-circ {
+    border-radius: 50%;
+    color: #fff;
+    background-color: #770077;
+    padding: .2em;
+    width: 1.8em;
+    display: inline-block;
+    text-align: center;
+}
+
+.shop-item:hover .shop-item-button {
+    visibility: visible;
+}
+
+.shop-item-button {
+    visibility: hidden;
+    background-color: #a67;
+    color: #fff;
+    border-radius: 4px;
+    border: 0px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.shop-item-button:hover {
+    background-color:#d00;
+    box-shadow: 1px 1px 3px #ccc;
+}
+
+
+.shop-item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-item-price {
+    display: inline-block;
+    padding-left: 12px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.shop-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.shop-item {
+    border: 1px solid #ccc;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.shop-item:hover {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hrz-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #707;
+    border-radius: 4px;
+    padding: 12px;
+    background-color: #eee;
+}

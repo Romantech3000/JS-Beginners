@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Задание 1</h2>
+    <div class="hrz-flex">
+        <input id="number1" type="text" value="245">
+        <button class='btn' onclick="task1RandomNum()">Случайное число <br> от 0 до 999</button>
+        <button class="btn" onclick="task1()">Преобразовать значение<br> в объект</button>
+    </div>
+    <p id="results1"></p>    
+
+    <h2>Задание 2</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <h3 class="shop-item-title">Яблоко</h3>
+            <img src="images/apple01.jpg" alt="apple" class="shop-item-image">
+            <div class="shop-item-details">
+                <span class="shop-item-price">5.99</span>
+                <button id="prod1" class="shop-item-button">В корзину</button>
+            </div>
+        </div>
+        <div class="shop-item">
+                <h3 class="shop-item-title">Груша</h3>
+                <img src="images/pear01.jpg" alt="pear" class="shop-item-image">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">7.99</span>
+                    <button id="prod2" class="shop-item-button">В корзину</button>
+                </div>
+        </div>
+        <div class="shop-item">
+                <h3 class="shop-item-title">Персик</h3>
+                <img src="images/peach01.jpg" alt="peach" class="shop-item-image">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">9.99</span>
+                    <button id="prod3" class="shop-item-button">В корзину</button>
+                </div>
+        </div>        
+    </div>
+    <div class="cart-items">
+        <h2>Корзина</h2>
+        <button class="btn" onclick="task2()">Стоимость корзины товаров</button>
+    </div>
+
+
+</div>
+
+</body>
+</html>
