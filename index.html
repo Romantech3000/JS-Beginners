@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <script src="chessboard.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Задание 1 - Шахматная доска</h2>
+    <div class="input-flex">
+        <label class="lbl" for="chess_size">Сторона доски в клетках от 2 до 20</label>
+        <input class="short" id="chess_size" type="text" value="8">
+        <button class="btn" onclick="drawChessboardParms()">Нарисовать шахматную доску</button>
+    </div>
+    
+    <div id="chessboard">
+
+    </div>
+
+    <h2>Задание 3 - Каталог товаров</h2>
+    <p>Сначала добавьте товары в каталог, а затем товары в корзину. Каждое нажатие кнопки "в корзину" добавляет одну единицу товара.</p>
+    <div class="input-flex">
+        <button class="btn" onclick="makeCatalogParms()">Добавить 6 товаров в каталог</button>
+    </div>
+
+    <div id="catalog" class="shop-items">
+        <!-- keeping it here as a template
+        <div class="shop-item">
+            <h3 class="shop-item-title">Яблоко</h3>
+            <img src="images/apple01.jpg" alt="apple" class="shop-item-image">
+            <div class="shop-item-details">
+                <span class="shop-item-price">5.99</span>
+                <button id="prod1" class="shop-item-button">В корзину</button>
+            </div>
+        </div>    
+        -->
+    </div>
+
+    <h2>Задание 2 - Корзина товаров</h2>
+    <p>Сначала добавьте товары в каталог, а затем товары в корзину. Каждое нажатие кнопки "в корзину" добавляет одну единицу товара.</p>
+    <div class="cart-items">
+        <div id="cart">
+
+        </div>
+        <button class="btn" onclick="shopCart.clear(); shopCart.view('cart')">Очистить корзину</button>
+    </div>
+
+
+</div>
+
+</body>
+</html>
