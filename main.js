@@ -290,17 +290,14 @@ function viewCart(cartElId) {
 
         // avoiding global cart HTML reassignment. kinda replaces 'innerHTML +='
         var innerHtmlWrapperEl = document.createElement('div');
+        //'If the element has no parent element, setting its outerHTML property will not change it or its descendants. '
+        // Assigning child and then then using outerHTML worked, but idk if it's reliable, so I added a wrapper
         innerHtmlWrapperEl.innerHTML = '<p class="cart-summary-empty">В корзине: ' + (nProds) + ' '
                 + ofProdsText(nProds) + ' на сумму ' +  this.getTotalPrice().toFixed(2) + ' рублей</p>';
-        
-        cartEl.appendChild(innerHtmlWrapperEl); //should keep the rest of cartEl intact
-        //outerHTML didn't work probably replac
+        cartEl.appendChild(innerHtmlWrapperEl);
 
-        //cartEl.innerHTML += '<p class="cart-summary-empty">В корзине: ' + (nProds) + ' '
-          //              + ofProdsText(nProds) + ' на сумму ' +  this.getTotalPrice().toFixed(2) + ' рублей</p>';
         
-        /* another workaround to non-working cartSubEl.addEventListener('click', handleDelCartProductClick); above
-        it seems in some cases the elements need to be rendered before they can be attached an event handler to
+        /* another workaround for attaching listeners to changed elements
         var btns = document.querySelectorAll('.cart-prod-del');
         for (var i = 0; i< btns.length; i++) {
             btns[i].addEventListener('click', handleDelCartProductClick);
@@ -489,4 +486,4 @@ function dubDubId(elemId) {
     return elemId;
 }
 
-window.onload = init;
+window.addEventListener('load', init);
