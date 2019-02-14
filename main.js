@@ -289,11 +289,12 @@ function viewCart(cartElId) {
         }
 
         // avoiding global cart HTML reassignment. kinda replaces 'innerHTML +='
-        var fakeInnerHTMLEl = document.createElement('p');
-        fakeInnerHTMLEl.outerHTML = '<p class="cart-summary-empty">В корзине: ' + (nProds) + ' '
+        var innerHtmlWrapperEl = document.createElement('div');
+        innerHtmlWrapperEl.innerHTML = '<p class="cart-summary-empty">В корзине: ' + (nProds) + ' '
                 + ofProdsText(nProds) + ' на сумму ' +  this.getTotalPrice().toFixed(2) + ' рублей</p>';
         
-        cartEl.appendChild(fakeInnerHTML); //should keep the rest of cartEl intact
+        cartEl.appendChild(innerHtmlWrapperEl); //should keep the rest of cartEl intact
+        //outerHTML didn't work probably replac
 
         //cartEl.innerHTML += '<p class="cart-summary-empty">В корзине: ' + (nProds) + ' '
           //              + ofProdsText(nProds) + ' на сумму ' +  this.getTotalPrice().toFixed(2) + ' рублей</p>';
