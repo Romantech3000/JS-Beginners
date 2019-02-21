@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cart</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <a href="index.html" id="go2catalog" class="btn">Перейти в каталог товаров</a>
+    <a href="#" id="save-cart" class="btn hide">Сохранить корзину</a>
+    <a href="#" id="load-cart" class="btn hide">Загрузить корзину</a>
+    <div id="accordion">
+        <h2>Состав корзины</h2>
+        <div id="accord-panel-1" class="accord-panel active">
+            <div id="cart">
+
+            </div>
+            <button class="btn" onclick="shopCart.clear(); shopCart.view('cart')">Очистить корзину</button>
+            <button class="btn" id="update-cart-btn">Пересчитать корзину</button>
+            <button class="btn" id="next-btn">Далее</button>
+        </div>
+
+        <h2>Адрес доставки</h2>
+        <div id="accord-panel-2" class="accord-panel">
+            <button class="btn" id="next-btn">Далее</button>
+        </div>
+
+        <h2>Коментарий</h2>
+        <div id="accord-panel-2" class="accord-panel">
+
+            <button class="btn">Отправить</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

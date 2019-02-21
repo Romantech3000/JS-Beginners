@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Каталог товаров</h2>
+    <div class="input-flex">
+        <button class="btn" onclick="makeCatalogParms()">Добавить 6 товаров в каталог</button>
+    </div>
+
+    <div id="catalog" class="shop-items">
+        <!-- keeping it here as a template
+        <div class="shop-item">
+            <h3 class="shop-item-title">Яблоко</h3>
+            <img src="images/apple01.jpg" alt="apple" class="shop-item-image">
+            <div class="shop-item-details">
+                <span class="shop-item-price">5.99</span>
+                <button id="prod1" class="shop-item-button">В корзину</button>
+            </div>
+        </div>    
+        -->
+    </div>
+
+    <p class="topm-50">
+        <a href="cart.html" id="go2cart" class="btn">Перейти на страницу корзины</a>
+        <a href="#" id="save-cart" class="btn hide">Сохранить корзину</a>
+        <a href="#" id="load-cart" class="btn hide">Загрузить корзину</a>
+    </p>
+
+    <h2>Корзина товаров</h2>
+    <div class="cart-items">
+        <div id="cart">
+
+        </div>
+        <button class="btn" onclick="shopCart.clear(); shopCart.view('cart')">Очистить корзину</button>
+        <button class="btn" id="update-cart-btn">Пересчитать корзину</button>
+    </div>
+
+    <div id="modal_bg" class="modal-bg">
+        <div class="modal-central-pane">
+            <div id="modal_close_btn" title="Закрыть">&#xe80c;</div>
+            <h3 id="madal-title" class="modal-title">sometext</h3>
+            <div id="modal-img-block" class="modal-img-block"></div>
+            <div id="modal-thumbnails" class="modal-thumbnails"></div>
+            <p class="modal-bottom-text">Кликните миниатюру мышкой или используйте стрелки вправо/влево на клавиатуре. Esc - закрыть окно</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
