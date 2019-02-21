@@ -378,3 +378,39 @@ label.lbl {
 .active {
     display: block;
 }
+
+.accord-header {
+    margin: 8px 0px;
+    cursor: pointer;
+}
+
+.accord-header:hover {
+    background-color: #a47;
+}
+ /* no hover evvects for active heading */
+.accord-header.active:hover {
+    cursor: default;
+    background-color: #a67;
+}
+
+.accord-next-btn {
+    min-width: 150px;
+}
+
+.cart-comment {
+    display: block;
+    min-width: 90%;
+    margin: 10px auto;
+}
+
+.cart-address-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
+.cart-address-input, 
+.country-sel {
+    margin: 12px;
+}

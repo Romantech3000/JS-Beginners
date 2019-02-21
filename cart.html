@@ -16,24 +16,39 @@
     <a href="#" id="save-cart" class="btn hide">Сохранить корзину</a>
     <a href="#" id="load-cart" class="btn hide">Загрузить корзину</a>
     <div id="accordion">
-        <h2>Состав корзины</h2>
+        <h2 class="accord-header active">Состав корзины</h2>
         <div id="accord-panel-1" class="accord-panel active">
             <div id="cart">
 
             </div>
             <button class="btn" onclick="shopCart.clear(); shopCart.view('cart')">Очистить корзину</button>
             <button class="btn" id="update-cart-btn">Пересчитать корзину</button>
-            <button class="btn" id="next-btn">Далее</button>
+            <button class="btn accord-next-btn">Далее</button>
         </div>
 
-        <h2>Адрес доставки</h2>
+        <h2 class="accord-header">Адрес доставки</h2>
         <div id="accord-panel-2" class="accord-panel">
-            <button class="btn" id="next-btn">Далее</button>
+            <div class="cart-address-flex">
+                    <p class="cart-sum-title">Shipping Adress</p>
+                    <select class="country-sel" name="country" id="country">
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Cambodia">Cambodia</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Japan">Japan</option>
+                    </select>
+                    <input class="cart-address-input" type="text" placeholder="State">
+                    <input class="cart-address-input" type="text" placeholder="Postcode / Zip">
+            </div>
+
+            <button class="btn accord-next-btn">Далее</button>
         </div>
 
-        <h2>Коментарий</h2>
+        <h2 class="accord-header">Комментарий к заказу</h2>
         <div id="accord-panel-2" class="accord-panel">
-
+            <textarea class="cart-comment" name="cart-comment" id="cart-comment" cols="30" rows="10" placeholder="напишите здесь комментарий к заказу"></textarea>
             <button class="btn">Отправить</button>
         </div>
     </div>

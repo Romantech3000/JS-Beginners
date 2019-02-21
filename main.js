@@ -554,6 +554,24 @@ function initCartPage() {
 function init() {
     if (document.title == 'Cart') {
         initCartPage();
+
+        // cart page accordion folding/unfolding and "next buttons" moving to the next accordion content panel
+        document.getElementById('accordion').addEventListener('click', function (e) {
+            if (e.target.classList.contains('accord-header')) {
+                var panels = document.querySelectorAll('#accordion > div');
+                for (var i = 0; i < panels.length; i++) {
+                    panels[i].previousElementSibling.classList.remove('active'); //make the headers behave differently
+                    panels[i].classList.remove('active');
+                }
+                e.target.nextElementSibling.classList.toggle('active');
+                e.target.classList.add('active');
+            }
+            if (e.target.classList.contains('accord-next-btn')) {
+                e.target.parentElement.nextElementSibling.click();
+            }
+        });  
+
+
     } 
     else {
         initCatalogPage();
