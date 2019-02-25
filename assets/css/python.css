@@ -1,0 +1,70 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;    
+}
+
+.wrapper-flex {
+    display: flex;
+    padding: 10px;
+}
+
+.legend {
+    background-color: #fff;
+    width: 30%;
+    margin-left: 30px;
+}
+
+.tiny-box {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.field-table {
+    border-collapse: collapse;
+    background-color: #ccc;
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    border: 1px dotted #777;
+    background-color: #000;
+}
+
+.python-cell {
+    background-color: green;
+}
+
+.food-cell {
+    background-color: crimson;
+}
+
+.poison-cell {
+    background-color: cyan;
+}
+
+.btn {
+    font-weight: bold;
+    text-transform: uppercase;
+    min-width: 100px;
+    padding: 12px;
+    cursor: pointer;
+    background-color: #b23;
+    color: #fff;
+    outline: none;
+    border: 2px solid #a23;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #a23;
+    border-color: #b23;
+}
+
